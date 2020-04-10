@@ -58,7 +58,9 @@ def cyk_parser(words, single_grammar, double_grammar):
 
 if __name__ == "__main__":
     single_grammar, double_grammar = parse_cnf_grammar(CNF_PATH)
+    print("type your sentence without punctuation")
     words = input().lower().split(" ")
+    print("words:", end=" ")
     print(words)
     parsed = cyk_parser(words, single_grammar, double_grammar)
     if parsed is None:
