@@ -68,3 +68,4 @@ if __name__ == "__main__":
     else:
         for p in parsed:
             print(p)
+        print("total parsed: {}".format(len(parsed)))
